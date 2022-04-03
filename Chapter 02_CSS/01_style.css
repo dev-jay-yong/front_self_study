@@ -1,9 +1,16 @@
 div {
-    box-sizing: border-box;
-    padding: 20px;
-    margin: 20px;
-    border: 10px solid #000;
-    width: 100px;
-    height: 100px;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 32px;
     background-color: red;
+}
+
+body {
+    height: 1000000px;
+    width: 100000px;
+}
+
+div span{
+    position: absolute;
 }
