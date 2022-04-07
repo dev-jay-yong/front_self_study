@@ -1,0 +1,53 @@
+.box {
+    font-size: 20px;
+    &.border-box {
+      border: 10px solid red;
+     }
+    &.bg-box {
+      background-color: blue;
+     }
+  }
+  span {
+    background-color: gray;
+  }
+  div > span {
+    background-color: blue;
+  } /* div의 첫번째 자식 span만 색깔이 파란색으로 적용됨 (자식결합자) */
+  
+  .error-msg{
+    display:none; /* 평상시에는 에러 메세지가 안보이게 처리 */
+  }
+  
+  input[type="text"] {
+    &.error + .error-msg{ 
+     /* input의 type이 text인 요소 중 
+      class명이 error인 친구와 가장 인접한 .error-msg 클래스 명을 가진 요소에 적용됨.*/
+      display: block;
+      color: red;
+     }
+  }
+  
+  .btn test:not(:disabled):hover {
+    /* 마우스를 버튼 위에 올렸을 때 적용됨 + disabled가 메겨졌을때는 작동하지 않음.*/
+    background-color: red;
+  }
+  
+  .btn test:focus {
+    /* 사용자가 탭등을 활용해 버턴을 focus 했을 때 적용됨 */
+    background-color: orange;
+  }
+  
+  .btn test:active {
+    /* 사용자가 버튼을 눌렀다가 떼기 전까지 적용됨 */
+    background-color: yellow;
+  }
+  
+  .btn test:focus-visible {
+    /* active를 사용했을때 버튼을 뗀 시점에는 적용이 안됨 (IE에서는 사용이 어려움) */
+    background-color: orange;
+  }
+  
+  .btn test:disabled {
+    opacity: 0.5;
+  }
+  
