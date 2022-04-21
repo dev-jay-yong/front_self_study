@@ -88,3 +88,17 @@ p {
   @include ellipsis;
 }
 ```
+
+### Sass @function
+```scss
+@function half-opacity($color) {
+  $color: rgba($color, .5);
+  @return $color;
+}
+
+h1 {
+  font-size: 10em;
+  text-align: center;
+  color: half-opacity(green);
+}
+```
