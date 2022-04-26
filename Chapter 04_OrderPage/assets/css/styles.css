@@ -136,6 +136,40 @@ textarea::-webkit-outer-spin-button {
   text-indent: -9999px;
 }
 
+.header-area {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #03c75a;
+  color: #fff;
+  z-index: 5000;
+  padding-right: 18px;
+  padding-left: 18px;
+}
+
+.header-area .place-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-area .place-header .title {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.header-area .place-header .link-back {
+  display: flex;
+}
+
+.header-area .place-header .my-orders {
+  font-size: 15px;
+  font-weight: 700;
+}
+
 .dimmed-layer {
   position: fixed;
   top: 0;
