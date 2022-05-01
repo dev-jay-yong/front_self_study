@@ -6,3 +6,16 @@
     overflow: hidden;
     text-indent: -9999px;
 }
+
+.scroll-x {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;   
+    -webkit-overflow-scrolling: touch;
+    -ms-voerflow-style: none; // IE에서 스크롤바 없애기
+    scrollbar-width: none; // firefox에서 스크롤바 없애기
+    &::-webkit-scrollbar{
+        display: none // chrome에서 스크롤바 없애기
+    }
+
+}
