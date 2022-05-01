@@ -292,3 +292,19 @@ textarea::-webkit-outer-spin-button {
   background-color: #000;
   color: #fff;
 }
+
+.order-info-area {
+  padding: 10px 18px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  background-color: #e7f7ff;
+}
+
+.container {
+  padding-top: 94px;
+}
+
+.common-inner {
+  margin: 0 auto;
+  max-width: 720px;
+  background-color: red;
+}
