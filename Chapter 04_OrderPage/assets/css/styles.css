@@ -299,6 +299,96 @@ textarea::-webkit-outer-spin-button {
   background-color: #e7f7ff;
 }
 
+.order-info-area .info-main-title {
+  line-height: 39px;
+}
+
+.order-info-area .title {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  color: #333;
+}
+
+.order-info-area .title .ico-n-logo {
+  margin-right: 6px;
+  width: 24px;
+  height: 24px;
+}
+
+.tab-switch-box {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.tab-switch-box .tab-switch {
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.06);
+  line-height: 40px;
+  text-align: 13px;
+  font-weight: 700;
+  color: #666;
+  letter-spacing: -0.3px;
+  text-align: center;
+}
+
+.tab-switch-box .tab-switch.is-activate {
+  position: relative;
+  flex-grow: 1.2;
+  border: 1px solid #333;
+  font-size: 15px;
+  color: #333;
+  background-color: #fff;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.05);
+}
+
+.tab-switch-box .tab-switch.is-activate::after {
+  content: '';
+  position: absolute;
+  bottom: -9px;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border: 1px solid;
+  border-width: 0 1px 1px 0;
+  background-color: #fff;
+  transform: rotate(45deg) translateX(-50%);
+}
+
+.tab-switch-box .tab-switch.is-activate .ico-check {
+  display: inline-block;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+.tab-switch-box .ico-check {
+  display: none;
+}
+
+.info-main-notice {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+  padding: aut12px 16px;
+  border-radius: 2px;
+  background-color: #fff;
+  font-size: 14px;
+  letter-spacing: -0.3px;
+  color: #333;
+}
+
+.info-main-notice.alert {
+  color: #ff3d3b;
+  font-weight: 700;
+}
+
+.info-main-notice .ico-clock {
+  margin-right: 6px;
+}
+
 .container {
   padding-top: 94px;
 }
@@ -306,5 +396,4 @@ textarea::-webkit-outer-spin-button {
 .common-inner {
   margin: 0 auto;
   max-width: 720px;
-  background-color: red;
 }
